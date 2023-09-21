@@ -18,24 +18,34 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **03-Ocean-A Room Controls: Displays**
 
-![03-Ocean-A](/IMAGES/03oceana-displays-pg.jpg)
+![03oceana-displays-pg](/IMAGES/03oceana-displays-pg.jpg)
 
 | USER INTERFACE ELEMENT        | WIDGET ID                |
 | ----------------------------- | ------------------------ |
 | Room Controls Panel           | roomcontrols-pnl         |
 | Displays Page                 | displays-pg              |
 | Main Display: On Button       | display01-on-btn         |
-| Main Display: Off Button      | display01-off-btn        |
 | Projector: On Button          | display02-on-btn         |
 | Projector: Off Button         | display02-off-btn        |
 | Projector: Lift Up Button     | display02-liftup-btn     |
 | Projector: Lift Down Button   | display02-liftdown-btn   |
 | Projector: Screen Up Button   | display02-screenup-btn   |
-| Prohector: Screen Down Button | display02-screendown-btn |
+| Projector: Screen Down Button | display02-screendown-btn |
 
-### **pimco-roomcontrols-singledisplay-lights1x2-pnl:**
+### **03-Ocean-B&C Room Controls: Displays**
 
-![Single Display with Lighting1x2](/images/roomcontrols-singledisplay-lights1x2-pnl.PNG)
+![03oceanb-displays-pg](/IMAGES/03oceanb-displays-pg.jpg)
+
+| USER INTERFACE ELEMENT        | WIDGET ID                |
+| ----------------------------- | ------------------------ |
+| Room Controls Panel           | roomcontrols-pnl         |
+| Displays Page                 | displays-pg              |
+| Main Display: On Button       | display01-on-btn         |
+
+
+### **03-Ocean-A&B&C Room Controls: Lighting**
+
+![03ocean-lighting-pg](/IMAGES/03ocean-lighting-pg.jpg)
 
 | USER INTERFACE LABEL          | WIDGET ID             |
 | ----------------------------- | --------------------- |
@@ -52,37 +62,15 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 | Blackout Shades: Up Button    | shadezone02-op-btn    |
 | Blackout Shades: Down Button  | shadezone02-down-btn  |
 
-### **pimco-roomcontrols-singledisplay-lights1x3-pnl:**
+### **03-Ocean-A&B&C Room Controls: Combine**
 
-![Single Display with Lighting1x3](/images/roomcontrols-singledisplay-lights1x3-pnl.PNG)
+![03ocean-combine-pg](/IMAGES/03ocean-combine-pg.jpg)
 
-| USER INTERFACE LABEL          | WIDGET ID             |
-| ----------------------------- | --------------------- |
-| Overhead Lights: On Button    | lightzone01-on-btn    |
-| Overhead Lights: Off Button   | lightzone01-off-btn   |
-| Overhead Lights: Up Button    | lightzone01-up-btn    |
-| Overhead Lights: Down Button  | lightzone01-down-btn  |
-| Solar Shades: Open Button     | shadezone01-open-btn  |
-| Solar Shades: Close Button    | shadezone01-close-btn |
-| Solar Shades: Up Button       | shadezone01-up-btn    |
-| Solar Shades: Down Button     | shadezone01-down-btn  |
-| Blackout Shades: Open Button  | shadezone02-open-btn  |
-| Blackout Shades: Close Button | shadezone02-close-btn |
-| Blackout Shades: Up Button    | shadezone02-up-btn    |
-| Blackout Shades: Down Button  | shadezone02-down-btn  |
-| Drapery Track: Open Button    | shadezone03-open-btn  |
-| Drapery Track: Close Button   | shadezone03-close-btn |
-| Drapery Track: Up Button      | shadezone03-up-btn    |
-| Drapery Track: Down Button    | shadezone03-down-btn  |
-
-![Dual Display](/images/roomcontrols-dualdisplay-pnl.PNG)
-
-| USER INTERFACE LABEL      | WIDGET ID         |
-| ------------------------- | ----------------- |
-| Left Display: On Button   | display01-on-btn  |
-| Left Display: Off Button  | display01-off-btn |
-| Right Display: On Button  | display02-on-btn  |
-| Right Display: Off Button | display02-off-btn |
+| USER INTERFACE ELEMENT        | WIDGET ID                |
+| ----------------------------- | ------------------------ |
+| Room Controls Panel           | roomcontrols-pnl         |
+| Displays Page                 | displays-pg              |
+| Main Display: On Button       | display01-on-btn         |
 
 ## **USER INTERFACE EXTENSION INSTALLATION:**
 
