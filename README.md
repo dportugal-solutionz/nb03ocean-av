@@ -11,7 +11,6 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 - [User Interface Extension Widget Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
 - [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation)
 - [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
-- [Contributions](https://github.com/brianlopezpimco/nb03ocean-av#contributions)
 - [Additional Resources](https://github.com/brianlopezpimco/nb03ocean-av#additional-resources)
 
 ## **USER INTERFACE EXTENSION FILES:**
@@ -122,10 +121,6 @@ In order to load compiled code to a Crestron processor, you must install Crestro
 Once connected. select the "Program" button. Browse your computer for the file and select send to load the file...
 
 ![<Uploading Code>](/IMAGES/toolbox-send-code.png)
-
-## **CONTRIBUTIONS:**
-
-All endpoint configurations, user interface extensions, and JavaScript macros contained in this repo were created by [Brian Lopez](https://www.linkedin.com/in/engineerblopez/) for [PIMCO](https://www.pimco.com/en-us/) TeleMedia in 2023.
 
 ## **ADDITIONAL RESOURCES:**
 
