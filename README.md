@@ -18,7 +18,7 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **03-Ocean-A Room Controls: Displays**
 
-![03-Ocean-A](/images/03oceana-displays-pg.jpg)
+![03-Ocean-A](/IMAGES/03oceana-displays-pg.jpg)
 
 | USER INTERFACE ELEMENT        | WIDGET ID                |
 | ----------------------------- | ------------------------ |
