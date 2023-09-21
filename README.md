@@ -18,9 +18,9 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **pimco-roomcontrols-singledisplay-pnl:**
 
-![Single Display](/images/roomcontrols-singledisplay-pnl.PNG)
+![03-Ocean-A](/images/roomcontrols-nb03oceana-pnl.png)
 
-| USER INTERFACE LABEL     | WIDGET ID         |
+| USER INTERFACE ELEMENT   | WIDGET ID         |
 | ------------------------ | ----------------- |
 | Main Display: On Button  | display01-on-btn  |
 | Main Display: Off Button | display01-off-btn |
