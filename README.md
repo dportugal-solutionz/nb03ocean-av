@@ -49,6 +49,8 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 | USER INTERFACE ELEMENT        | WIDGET ID             |
 | ----------------------------- | --------------------- |
+| Room Controls Panel           | roomcontrols-pnl      |
+| Lighting Page                 | lighting-pg           |
 | Overhead Lights: On Button    | lightzone01-on-btn    |
 | Overhead Lights: Off Button   | lightzone01-off-btn   |
 | Overhead Lights: Up Button    | lightzone01-up-btn    |
@@ -69,8 +71,11 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 | USER INTERFACE ELEMENT        | WIDGET ID                |
 | ----------------------------- | ------------------------ |
 | Room Controls Panel           | roomcontrols-pnl         |
-| Displays Page                 | displays-pg              |
-| Main Display: On Button       | display01-on-btn         |
+| Combine Page                  | combine-pg               |
+| Standalone Mode Button        | combine-standalone-btn   |
+| Combine Rooms A & B Button    | combine-ab-btn           |
+| Combine Rooms B & C Button    | combine-bc-btn           |
+| Combine All Rooms Button      | combine-abc-btn          |
 
 ## **USER INTERFACE EXTENSION INSTALLATION:**
 
