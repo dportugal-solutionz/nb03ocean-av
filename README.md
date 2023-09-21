@@ -97,7 +97,7 @@ Confirm your UI is loaded correctly, and select "Uploade to Device" from the top
 
 ## **CONTROL SYSTEM FILES:**
 
-Crestron SIMPL Windows program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" (pimco-roomcontrols-cisco). Widgets from the room controls panel are handled and commands are executed by the applicable module (e.g. cisco-codec, lutron-qs, etc.). 
+Crestron SIMPL Windows program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" of communication. Widgets from the room controls panel are handled and commands are executed by the applicable module (e.g. cisco-codec, lutron-qs, etc.). 
 
 ![simpl-code.png](/IMAGES/simpl-code.png)
 
