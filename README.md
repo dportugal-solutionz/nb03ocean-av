@@ -81,60 +81,55 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 To upload a user interface extension file; first login to the codec...
 
-![<Login Screen>](/images/endpoint-login-screen.PNG)
+![<Login Screen>](/IMAGES/endpoint-login-screen.PNG)
 
 Browse to "User Interface Extensions" from the main menu...
 
-![<User Interface Extensions>](/images/ui-extension-zoomtools.PNG)
+![<User Interface Extensions>](/IMAGES/ui-extension-zoomtools.PNG)
 
 Select hamburger menu at top right, and select "Merge from File". NOTE: If you select "Import from File" any existing UI extensions will be overwitten when the new extension is loaded...
 
-![<User Interface Extensions>](/images/ui-extension-merge-file.PNG)
+![<User Interface Extensions>](/IMAGES/ui-extension-merge-file.PNG)
 
 Confirm your UI is loaded correctly, and select "Uploade to Device" from the top right menu to push the UI elements to the endpoint...
 
-![<User Interface Extensions>](/images/ui-extension-loaded.PNG)
+![<User Interface Extensions>](/IMAGES/ui-extension-loaded.PNG)
 
 ## **CONTROL SYSTEM FILES:**
 
-Most of the UI/UX is controlled internally by the codec and the WebEx navigator. For rooms with "Room Controls" (lights & shades), a Crestron control system processor is installed and connected to the codec. The control system registers for feedback from the codec and will send the appropriate commands to the lighting system. The following Crestron Control System program will work for systems with any combination of the endpoint configurations and UI extensions above.
-
-| CONFERENCE ROOM APPLICATION(S)                           | CRESTRON CONTROLS SYSTEM FILE(S) |
-| -------------------------------------------------------- | -------------------------------- |
-| All PIMCO Standard Conference Rooms with "Room Controls" | pimco-room-controls-cp4 v1.1.ipz |
+Most of the UI/UX is controlled internally by the codec and the WebEx navigator. For rooms with "Room Controls" (lights & shades), a Crestron control system processor is installed and connected to the codec. The control system registers for feedback from the codec and will send the appropriate commands to the lighting system.
 
 SIMPL Windows Program: Crestron program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" (pimco-roomcontrols-cisco). Widgets from the lighting panel are handled and lighting commands are executed by the lighting module (pimco-roomcontrols-lutron). Widgets from the displays panel are handled and executed by the dispays module (pimco-roomcontrols-samsung). 
 
-![Simpl Windows Code](/images/simpl-code.png)
+![Simpl Windows Code](/IMAGES/simpl-code.png)
 
 **SIMPL+ Codec Module:** Registers codec for feedback and maintains heartbeat...
 
-![SIMPL Plus Code](/images/simpl-plus-cisco-code.png)
+![SIMPL Plus Code](/IMAGES/simpl-plus-cisco-code.png)
 
 **SIMPL+ Lighting Module:** Handles lighting widgets and executes Lutron lighting controller commands...
 
-![SIMPL Plus Code](/images/simpl-plus-lutron-code.png)
+![SIMPL Plus Code](/IMAGES/simpl-plus-lutron-code.png)
 
 **SIMPL+ Displays Module:** Handles display widgets and executes Samsung display commands...
 
-![SIMPL Plus Code](/images/simpl-plus-samsung-code.png)
+![SIMPL Plus Code](/IMAGES/simpl-plus-samsung-code.png)
 
 ## **CONTROL SYSTEM FILES INSTALLATION:**
 
 In order to load compiled code to a Crestron processor, you must install Crestron Toolbox. You may need to register with Crestron and request access the software. Once installed, open Toolbox, then open the "Easy Config" tool. (tools menu). Once open, click the pencil at bottom, enter address of processor to connect...
 
-![<Connecting to Toolbox>](/images/toolbox-connect.png)
+![<Connecting to Toolbox>](/IMAGES/toolbox-connect.png)
 
 Once connected. select the "Program" button. Browse your computer for the file and select send to load the file...
 
-![<Uploading Code>](/images/toolbox-send-code.png)
+![<Uploading Code>](/IMAGES/toolbox-send-code.png)
 
 ## **CONTRIBUTIONS:**
 
-All endpoint configurations, user interface extensions, and JavaScript macros were created by [Brian Lopez](https://www.linkedin.com/in/engineerblopez/) for [PIMCO](https://www.pimco.com/en-us/) TeleMedia in 2022.
+All endpoint configurations, user interface extensions, and JavaScript macros were created by [Brian Lopez](https://www.linkedin.com/in/engineerblopez/) for [PIMCO](https://www.pimco.com/en-us/) TeleMedia in 2023.
 
 ## **ADDITIONAL RESOURCES:**
 
 - [Cisco Room Controls Design Guide](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/ce915/sx-mx-dx-room-kit-boards-customization-guide-ce915.pdf)
-- [Cisco Room Kit Plus Command References (ce 9.15)](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/ce915/collaboration-endpoint-software-api-reference-guide-ce915.pdf)
 - [Cisco RoomOS API References](https://roomos.cisco.com/xapi)
