@@ -1,0 +1,12 @@
+<Device Model="CP4N">
+   <Network Type="Cresnet" Id="01"/>
+   <Network Type="Ethernet" Id="02">
+      <Device Model="DM-NVX-E30" DeviceId="03" Name="codec01"/>
+      <Device Model="DM-NVX-E30" DeviceId="04" Name="codec02"/>
+      <Device Model="DM-NVX-E30" DeviceId="05" Name="codec03"/>
+      <Device Model="DM-NVX-D30" DeviceId="06" Name="display01"/>
+      <Device Model="DM-NVX-D30" DeviceId="07" Name="display02"/>
+      <Device Model="DM-NVX-D30" DeviceId="08" Name="display03"/>
+      <Device Model="DM-NVX-D30" DeviceId="09" Name="display04"/>
+   </Network>
+</Device>
