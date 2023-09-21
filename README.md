@@ -1,4 +1,4 @@
-# **PIMCO NB 03-Ocean Multipurpose Room: AV Files**
+# **PIMCO NB 03-Ocean MPR: AV Systems Files**
 
 Cisco user interface extension files contain all the graphics for the Room Controls panel.  Widget IDs and panel graphics can be found in the [User Interface Extensions Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids) section below.
 
@@ -18,7 +18,7 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **03-Ocean-A Room Controls: Displays**
 
-![03-Ocean-A](/images/roomcontrols-nb03oceana-pnl.png)
+![03-Ocean-A](/images/03oceana-displays-pg.jpg)
 
 | USER INTERFACE ELEMENT        | WIDGET ID                |
 | ----------------------------- | ------------------------ |
