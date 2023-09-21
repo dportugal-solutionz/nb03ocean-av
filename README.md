@@ -116,7 +116,7 @@ Crestron SIMPL Windows program registers the CP4 with the endpoint for feedback,
 
 ![simpl-plus-nec-projector.png](/IMAGES/simpl-plus-nec-projector.png)
 
-**SIMPL+ Combine Module:** Handles room combine widgets and executes biamp DSP presets and nvx stream locations...
+**SIMPL+ Combine Module:** Handles room combine widgets, executes biamp DSP presets, and nvx stream locations...
 
 ![simpl-room-combine.png](/IMAGES/simpl-plus-room-combine.png)
 
