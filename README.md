@@ -16,14 +16,22 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ## **USER INTERFACE EXTENSION WIDGET IDS:**
 
-### **pimco-roomcontrols-singledisplay-pnl:**
+### **03-Ocean-A Room Controls: Displays**
 
 ![03-Ocean-A](/images/roomcontrols-nb03oceana-pnl.png)
 
-| USER INTERFACE ELEMENT   | WIDGET ID         |
-| ------------------------ | ----------------- |
-| Main Display: On Button  | display01-on-btn  |
-| Main Display: Off Button | display01-off-btn |
+| USER INTERFACE ELEMENT        | WIDGET ID                |
+| ----------------------------- | ------------------------ |
+| Room Controls Panel           | roomcontrols-pnl         |
+| Displays Page                 | displays-pg              |
+| Main Display: On Button       | display01-on-btn         |
+| Main Display: Off Button      | display01-off-btn        |
+| Projector: On Button          | display02-on-btn         |
+| Projector: Off Button         | display02-off-btn        |
+| Projector: Lift Up Button     | display02-liftup-btn     |
+| Projector: Lift Down Button   | display02-liftdown-btn   |
+| Projector: Screen Up Button   | display02-screenup-btn   |
+| Prohector: Screen Down Button | display02-screendown-btn |
 
 ### **pimco-roomcontrols-singledisplay-lights1x2-pnl:**
 
@@ -128,16 +136,6 @@ Once connected. select the "Program" button. Browse your computer for the file a
 
 ![<Uploading Code>](/images/toolbox-send-code.png)
 
-## **WIRING SCHEMATICS:**
-
-| CONFERENCE ROOM APPLICATION                 | WIRING SCHEMATIC FILE                                  |
-| ------------------------------------------- | ------------------------------------------------------ |
-| Standard Conference Rooms (combined PDF)    | pimco-standard-conference-rooms-schematics.pdf         |
-| Single Display Conference Rooms without DSP | pimco-singledisplay-conference-rooms-schematic.pdf     |
-| Dual Display Conference Rooms without DSP   | pimco-dualdisplay-conference-rooms-schematic.pdf       |
-| Single Display Conference Rooms with DSP    | pimco-singledisplay-conference-rooms-dsp-schematic.pdf |
-| Dual Display Conference Rooms with DSP      | pimco-duladisplay-conference-rooms-dsp-schematic.pdf   |
-
 ## **CONTRIBUTIONS:**
 
 All endpoint configurations, user interface extensions, and JavaScript macros were created by [Brian Lopez](https://www.linkedin.com/in/engineerblopez/) for [PIMCO](https://www.pimco.com/en-us/) TeleMedia in 2022.
@@ -147,4 +145,3 @@ All endpoint configurations, user interface extensions, and JavaScript macros we
 - [Cisco Room Controls Design Guide](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/ce915/sx-mx-dx-room-kit-boards-customization-guide-ce915.pdf)
 - [Cisco Room Kit Plus Command References (ce 9.15)](https://www.cisco.com/c/dam/en/us/td/docs/telepresence/endpoint/ce915/collaboration-endpoint-software-api-reference-guide-ce915.pdf)
 - [Cisco RoomOS API References](https://roomos.cisco.com/xapi)
-
