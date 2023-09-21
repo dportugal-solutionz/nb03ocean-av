@@ -1,6 +1,6 @@
 # **PIMCO NB 03-Ocean Multipurpose Room: AV Files**
 
-PIMCO [Endpoint Configuration](https://github.com/brianlopezpimco/nbocean-av#configuration-files) (backups) have all the required configuration settings as well as the "Join Zoom CRC" application (JavaScript Macros & UI Extension XML) already configured. To replace an endpoint or configure a new one; restore the unit to factory defaults settings, upgrade the unit to current firmware (RoomOS11), then upload the appropriate configuration file following the [Configuration Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#configuration-file-installation) section below.
+PIMCO [Endpoint Configuration](https://github.com/brianlopezpimco/nb03ocean-av#configuration-files) (backups) have all the required configuration settings as well as the "Join Zoom CRC" application (JavaScript Macros & UI Extension XML) already configured. To replace an endpoint or configure a new one; restore the unit to factory defaults settings, upgrade the unit to current firmware (RoomOS11), then upload the appropriate configuration file following the [Configuration Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#configuration-file-installation) section below.
 
 For rooms with "Room Controls", [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) have all the graphics for the Room Controls panel on the conference room touch panel. To replace or upload new UI extension files to an endpoint; follow the [User Interface Extension Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-installation) section below. A table of widget IDs and panel graphics can be found in the [User Interface Extensions Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids) section.
 
@@ -10,17 +10,17 @@ Crestron [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#
 
 ## **TABLE OF CONTENTS:**
 
-- [Endpoint Configuration Files](https://github.com/brianlopezpimco/pimco-nb03ocean-av#endpoint-configuration-files)
-- [Configuration File Settings](https://github.com/brianlopezpimco/pimco-nb03ocean-av#configuration-file-settings)
-- [Configuration File Installation](https://github.com/brianlopezpimco/pimco-nb03ocean-av#configuration-file-installation)
-- [User Interface Extension Files](https://github.com/brianlopezpimco/pimco-nb03ocean-av#user-interface-exension-files)
-- [User Interface Extension Widget IDs](https://github.com/brianlopezpimco/pimco-nb03ocean-av#user-interface-extension-widget-ids)
-- [User Interface Extension Installation](https://github.com/brianlopezpimco/pimco-nb03ocean-av#user-interface-extension-installation)
-- [Control System Files](https://github.com/brianlopezpimco/pimco-nb03ocean-av#control-system-files)
-- [Control System Files Installation](https://github.com/brianlopezpimco/pimco-nb03ocean-av#control-system-files-installation)
-- [Wiring Schematics](https://github.com/brianlopezpimco/pimco-nb03ocean-av#wiring-schematics)
-- [Contributions](https://github.com/brianlopezpimco/pimco-nb03ocean-av#contributions)
-- [Additional Resources](https://github.com/brianlopezpimco/pimco-nb03ocean-av#additional-resources)
+- [Endpoint Configuration Files](https://github.com/brianlopezpimco/nb03ocean-av#endpoint-configuration-files)
+- [Configuration File Settings](https://github.com/brianlopezpimco/nb03ocean-av#configuration-file-settings)
+- [Configuration File Installation](https://github.com/brianlopezpimco/nb03ocean-av#configuration-file-installation)
+- [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-exension-files)
+- [User Interface Extension Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids)
+- [User Interface Extension Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-installation)
+- [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files)
+- [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
+- [Wiring Schematics](https://github.com/brianlopezpimco/nb03ocean-av#wiring-schematics)
+- [Contributions](https://github.com/brianlopezpimco/nb03ocean-av#contributions)
+- [Additional Resources](https://github.com/brianlopezpimco/nb03ocean-av#additional-resources)
 
 ## **ENDPOINT CONFIGURATION FILES:**
 
