@@ -2,17 +2,15 @@
 
 Cisco user interface extension files contain all the graphics for the Room Controls panel.  Widget IDs and panel graphics can be found in the [User Interface Extensions Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids) section.
 
-Crestron [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files) contain the logic needed to for "Room Controls" (lights & shades). To replace or upload new control system code to the processor; follow the [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below. The same program will work for all PIMCO standard conference rooms.
+Crestron control system files contain the SIMPL Windows program that controls the behavior of the AV system and it's periferal components. To replace or upload new control system code to a processor; follow the [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below.
 
-[Wiring Schematics](https://github.com/brianlopezpimco/nb03ocean-av#wiring-schematics) detail how each of the physical system components are connected together; each of the wiring schematic pdfs can be downloaded in the [Wiring Schematics](https://github.com/brianlopezpimco/nb03ocean-av#wiring-schematics) section below.
+Biamp DSP system files contain the Tesira audio program that controls how the AV system's audio is proccessed. To replace or upload a new DSP code to a processor; follow the [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation) 
 
 ## **TABLE OF CONTENTS:**
 
 - [User Interface Extension Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids)
 - [User Interface Extension Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-installation)
-- [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files)
 - [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
-- [Wiring Schematics](https://github.com/brianlopezpimco/nb03ocean-av#wiring-schematics)
 - [Contributions](https://github.com/brianlopezpimco/nb03ocean-av#contributions)
 - [Additional Resources](https://github.com/brianlopezpimco/nb03ocean-av#additional-resources)
 
