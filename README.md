@@ -103,15 +103,15 @@ SIMPL Windows Program: Crestron program registers the CP4 with the endpoint for 
 
 **SIMPL+ Codec Module:** Registers codec for feedback and maintains heartbeat...
 
-![SIMPL Plus Code](/IMAGES/simpl-plus-cisco-code.png)
+![SIMPL Plus Code](/IMAGES/simpl-plus-cisco-codec.png)
 
 **SIMPL+ Lighting Module:** Handles lighting widgets and executes Lutron lighting controller commands...
 
-![SIMPL Plus Code](/IMAGES/simpl-plus-lutron-code.png)
+![SIMPL Plus Code](/IMAGES/simpl-plus-lutron-qs.png)
 
 **SIMPL+ Displays Module:** Handles display widgets and executes Samsung display commands...
 
-![SIMPL Plus Code](/IMAGES/simpl-plus-samsung-code.png)
+![SIMPL Plus Code](/IMAGES/simpl-plus-samsung.png)
 
 ## **CONTROL SYSTEM FILES INSTALLATION:**
 
