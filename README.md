@@ -10,6 +10,7 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 - [User Interface Extension Widget Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
 - [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation)
+- [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files)
 - [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
 - [Additional Resources](https://github.com/brianlopezpimco/nb03ocean-av#additional-resources)
 
@@ -116,7 +117,7 @@ Crestron SIMPL Windows program registers the CP4 with the endpoint for feedback,
 
 ![simpl-plus-nec-projector.png](/IMAGES/simpl-plus-nec-projector.png)
 
-**SIMPL+ Combine Module:** Handles room combine widgets, executes biamp DSP presets, and nvx stream locations...
+**SIMPL+ Combine Module:** Handles room combine widgets, generates feedback for touch screens, executes biamp DSP presets, and nvx stream locations...
 
 ![simpl-room-combine.png](/IMAGES/simpl-plus-room-combine.png)
 
