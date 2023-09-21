@@ -18,7 +18,7 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **03-Ocean-A Room Controls: Displays**
 
-![03oceana-displays-pg](/IMAGES/03oceana-displays-pg.jpg)
+![03oceana-displays-pg](/IMAGES/nb03oceana-displays-pg.jpg)
 
 | USER INTERFACE ELEMENT        | WIDGET ID                |
 | ----------------------------- | ------------------------ |
@@ -34,7 +34,7 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **03-Ocean-B&C Room Controls: Displays**
 
-![03oceanb-displays-pg](/IMAGES/03oceanb-displays-pg.jpg)
+![03oceanb-displays-pg](/IMAGES/nb03oceanb-displays-pg.jpg)
 
 | USER INTERFACE ELEMENT        | WIDGET ID                |
 | ----------------------------- | ------------------------ |
@@ -45,9 +45,9 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **03-Ocean-A&B&C Room Controls: Lighting**
 
-![03ocean-lighting-pg](/IMAGES/03ocean-lighting-pg.jpg)
+![03ocean-lighting-pg](/IMAGES/nb03ocean-lighting-pg.jpg)
 
-| USER INTERFACE LABEL          | WIDGET ID             |
+| USER INTERFACE ELEMENT        | WIDGET ID             |
 | ----------------------------- | --------------------- |
 | Overhead Lights: On Button    | lightzone01-on-btn    |
 | Overhead Lights: Off Button   | lightzone01-off-btn   |
@@ -64,7 +64,7 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ### **03-Ocean-A&B&C Room Controls: Combine**
 
-![03ocean-combine-pg](/IMAGES/03ocean-combine-pg.jpg)
+![03ocean-combine-pg](/IMAGES/nb03ocean-combine-pg.jpg)
 
 | USER INTERFACE ELEMENT        | WIDGET ID                |
 | ----------------------------- | ------------------------ |
