@@ -96,31 +96,39 @@ Confirm your UI is loaded correctly, and select "Uploade to Device" from the top
 
 ## **CONTROL SYSTEM FILES:**
 
-SIMPL Windows Program: Crestron program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" (pimco-roomcontrols-cisco). Widgets from the room controls panel are handled and commands are executed by the applicable module (e.g. roomcontrols-cisco). 
+Crestron SIMPL Windows program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" (pimco-roomcontrols-cisco). Widgets from the room controls panel are handled and commands are executed by the applicable module (e.g. cisco-codec, lutron-qs, etc.). 
 
-![Simpl Windows Code](/IMAGES/simpl-code.png)
+![simpl-code.png](/IMAGES/simpl-code.png)
 
 **SIMPL+ Codec Module:** Registers codec for feedback and maintains heartbeat...
 
-![SIMPL Plus Codec](/IMAGES/simpl-plus-cisco-codec.png)
+![simpl-plus-cisco-codec.png](/IMAGES/simpl-plus-cisco-codec.png)
 
 **SIMPL+ Lighting Module:** Handles lighting widgets and executes Lutron lighting controller commands...
 
-![SIMPL Plus lutrom](/IMAGES/simpl-plus-lutron-qs.png)
+![simpl-plus-lutron-qs.png](/IMAGES/simpl-plus-lutron-qs.png)
 
 **SIMPL+ Displays Module:** Handles display widgets and executes Samsung display commands...
 
-![SIMPL Plus Code](/IMAGES/simpl-plus-samsung.png)
+![simpl-plus-samsung.png](/IMAGES/simpl-plus-samsung.png)
+
+**SIMPL+ Projector Module:** Handles projector widgets and executes NEC projector commands...
+
+![simpl-plus-nec-projector.png](/IMAGES/simpl-plus-nec-projector.png)
+
+**SIMPL+ Combine Module:** Handles room combine widgets and executes biamp DSP presets and nvx stream locations...
+
+![simpl-room-combine.png](/IMAGES/simpl-room-combine.png)
 
 ## **CONTROL SYSTEM FILES INSTALLATION:**
 
 In order to load compiled code to a Crestron processor, you must install Crestron Toolbox. You may need to register with Crestron and request access the software. Once installed, open Toolbox, then open the "Easy Config" tool. (tools menu). Once open, click the pencil at bottom, enter address of processor to connect...
 
-![<Connecting to Toolbox>](/IMAGES/toolbox-connect.png)
+![toolbox-connect.png](/IMAGES/toolbox-connect.png)
 
 Once connected. select the "Program" button. Browse your computer for the file and select send to load the file...
 
-![<Uploading Code>](/IMAGES/toolbox-send-code.png)
+![toolbox-send-code.png](/IMAGES/toolbox-send-code.png)
 
 ## **ADDITIONAL RESOURCES:**
 
