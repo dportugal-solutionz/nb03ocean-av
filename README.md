@@ -1,6 +1,6 @@
 # **PIMCO NB 03-Ocean Multipurpose Room: AV Files**
 
-"Room Controls", [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) have all the graphics for the Room Controls panel on the conference room touch panel. A table of widget IDs and panel graphics can be found in the [User Interface Extensions Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids) section.
+Cisco user interface extension files contain all the graphics for the Room Controls panel.  Widget IDs and panel graphics can be found in the [User Interface Extensions Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids) section.
 
 Crestron [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files) contain the logic needed to for "Room Controls" (lights & shades). To replace or upload new control system code to the processor; follow the [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below. The same program will work for all PIMCO standard conference rooms.
 
