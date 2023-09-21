@@ -1,6 +1,6 @@
 # **PIMCO NB 03-Ocean MPR: AV Systems Files**
 
-Cisco user interface extension files contain all the graphics for the Room Controls panel.  Widget IDs and panel graphics can be found in the [User Interface Extensions Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids) section below.
+Cisco user interface extension files contain all the graphics for the Room Controls panel.  Widget IDs and panel graphics can be found in the [User Interface Extensions Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) section below.
 
 Crestron control system files contain the SIMPL Windows program that controls the behavior of the AV system and it's periferal components. To replace or upload new control system code to a processor, follow the [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below.
 
@@ -8,13 +8,13 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 
 ## **TABLE OF CONTENTS:**
 
-- [User Interface Extension Widget IDs](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-widget-ids)
-- [User Interface Extension Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-installation)
+- [User Interface Extension Widget Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
+- [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation)
 - [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
 - [Contributions](https://github.com/brianlopezpimco/nb03ocean-av#contributions)
 - [Additional Resources](https://github.com/brianlopezpimco/nb03ocean-av#additional-resources)
 
-## **USER INTERFACE EXTENSION WIDGET IDS:**
+## **USER INTERFACE EXTENSION FILES:**
 
 ### **03-Ocean-A Room Controls: Displays**
 
@@ -77,7 +77,7 @@ Biamp DSP system files contain the Tesira audio program that controls how the AV
 | Combine Rooms B & C Button    | combine-bc-btn           |
 | Combine All Rooms Button      | combine-abc-btn          |
 
-## **USER INTERFACE EXTENSION INSTALLATION:**
+## **USER INTERFACE EXTENSION FILES INSTALLATION:**
 
 To upload a user interface extension file; first login to the codec...
 
@@ -97,9 +97,7 @@ Confirm your UI is loaded correctly, and select "Uploade to Device" from the top
 
 ## **CONTROL SYSTEM FILES:**
 
-Most of the UI/UX is controlled internally by the codec and the WebEx navigator. For rooms with "Room Controls" (lights & shades), a Crestron control system processor is installed and connected to the codec. The control system registers for feedback from the codec and will send the appropriate commands to the lighting system.
-
-SIMPL Windows Program: Crestron program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" (pimco-roomcontrols-cisco). Widgets from the lighting panel are handled and lighting commands are executed by the lighting module (pimco-roomcontrols-lutron). Widgets from the displays panel are handled and executed by the dispays module (pimco-roomcontrols-samsung). 
+SIMPL Windows Program: Crestron program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" (pimco-roomcontrols-cisco). Widgets from the room controls panel are handled and commands are executed by the applicable module (e.g. roomcontrols-cisco). 
 
 ![Simpl Windows Code](/IMAGES/simpl-code.png)
 
