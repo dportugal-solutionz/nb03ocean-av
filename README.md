@@ -1,6 +1,6 @@
 # **PIMCO NB 03-Ocean MPR: AV Systems Files**
 
-Biamp [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-files) contain the audio dsp program that controls how the AV system's audio is proccessed. To replace or upload a new DSP program to a processor, follow the [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation) section below.
+Biamp [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files) contain the audio dsp program that controls how the AV system's audio is proccessed. To replace or upload a new DSP program to a processor, follow the [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation) section below.
 
 Cisco [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) contain all the graphics for the room controls panel. To replace or upload new user interface extensions to a codec, follow the [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation) section below.
 
@@ -8,7 +8,7 @@ Crestron [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#
 
 ## **TABLE OF CONTENTS:**
 
-- [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-files)
+- [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files)
 - [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation)
 - [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
 - [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation)
