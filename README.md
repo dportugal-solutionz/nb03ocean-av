@@ -18,6 +18,10 @@ Crestron [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#
 
 ## **DSP SYSTEM FILES:**
 
+Biamp DSP program accepts preset commands from the control system. There is a mixer block preset for each room configuration.
+
+![03oceana-displays-pg](/IMAGES/tesira-dsp.png)
+
 ## **USER INTERFACE EXTENSION FILES:**
 
 ### **03-Ocean-A Room Controls: Displays**
