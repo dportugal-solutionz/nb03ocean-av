@@ -1,28 +1,28 @@
 # **PIMCO NB 03-Ocean MPR: AV Systems Files**
 
-Biamp [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files) contain the audio dsp program that controls how the AV system's audio is proccessed. To replace or upload a new DSP program to a processor, follow the [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation) section below.
+[Biamp DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files) contain the audio dsp program that controls how the AV system's audio is proccessed. To replace or upload a new DSP program to a processor, follow the [Biamp DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation) section below.
 
-Cisco [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) contain all the graphics for the room controls panel. To replace or upload new user interface extensions to a codec, follow the [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation) section below.
+[Cisco User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) contain all the graphics for the room controls panel. To replace or upload new user interface extensions to a codec, follow the [Cisco User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation) section below.
 
-Crestron [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files) contain the control system program that controls the behavior of the AV system and it's periferal components. To replace or upload new control system code to a processor, follow the [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below.
+[Crestron Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files) contain the control system program that controls the behavior of the AV system and it's periferal components. To replace or upload new control system code to a processor, follow the [Crestron Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below.
 
 ## **TABLE OF CONTENTS:**
 
-- [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files)
-- [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation)
-- [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
-- [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation)
-- [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files)
-- [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
+- [Biamp DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files)
+- [Biamp DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation)
+- [Cisco User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
+- [Cisco User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation)
+- [Crestron Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files)
+- [Crestron Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
 - [Additional Resources](https://github.com/brianlopezpimco/nb03ocean-av#additional-resources)
 
-## **DSP SYSTEM FILES:**
+## **BIAMP DSP SYSTEM FILES:**
 
 Biamp DSP program accepts preset commands from the control system. There is a mixer block preset for each room configuration.
 
 ![03oceana-displays-pg](/IMAGES/tesira-dsp.png)
 
-## **USER INTERFACE EXTENSION FILES:**
+## **CISCO USER INTERFACE EXTENSION FILES:**
 
 ### **03-Ocean-A Room Controls: Displays**
 
@@ -85,7 +85,7 @@ Biamp DSP program accepts preset commands from the control system. There is a mi
 | Combine Rooms B & C Button    | combine-bc-btn           |
 | Combine All Rooms Button      | combine-abc-btn          |
 
-## **USER INTERFACE EXTENSION FILES INSTALLATION:**
+## **CISCO USER INTERFACE EXTENSION FILES INSTALLATION:**
 
 To upload a user interface extension file; first login to the codec...
 
@@ -103,7 +103,7 @@ Confirm your UI is loaded correctly, and select "Uploade to Device" from the top
 
 ![<User Interface Extensions>](/IMAGES/ui-extension-loaded.PNG)
 
-## **CONTROL SYSTEM FILES:**
+## **CRESTRON CONTROL SYSTEM FILES:**
 
 Crestron SIMPL Windows program registers the CP4 with the endpoint for feedback, and maintains "heartbeat" of communication. Widgets from the room controls panel are handled and commands are executed by the applicable module (e.g. cisco-codec, lutron-qs, etc.). 
 
@@ -129,7 +129,7 @@ Crestron SIMPL Windows program registers the CP4 with the endpoint for feedback,
 
 ![simpl-room-combine.png](/IMAGES/simpl-plus-room-combine.png)
 
-## **CONTROL SYSTEM FILES INSTALLATION:**
+## **CRESTRON CONTROL SYSTEM FILES INSTALLATION:**
 
 In order to load compiled code to a Crestron processor, you must install Crestron Toolbox. You may need to register with Crestron and request access the software. Once installed, open Toolbox, then open the "Easy Config" tool. (tools menu). Once open, click the pencil at bottom, enter address of processor to connect...
 
