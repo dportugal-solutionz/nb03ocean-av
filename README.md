@@ -1,4 +1,4 @@
-# **PIMCO NB 03-Ocean MPR: AV Systems Files**
+# **NB 03-Ocean MPR: AV Systems Files**
 
 [Biamp DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#biamp-dsp-system-files) contain the audio dsp program that controls how the AV system's audio is proccessed. To replace or upload a new DSP program to a processor, follow the [Biamp DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#biamp-dsp-system-files-installation) section below.
 
