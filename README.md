@@ -4,7 +4,7 @@
 
 [Cisco User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#cisco-user-interface-extension-files) contain the room controls ui for the Cisco navigator touch panel. To replace or upload new user interface extensions to a codec, follow the [Cisco User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#cisco-user-interface-extension-files-installation) section below.
 
-[Crestron Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#crestron-control-system-files) contain the control system program that controls the behavior of the AV system and it's periferal components. To replace or upload new control system code to a processor, follow the [Crestron Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#crestron-control-system-files-installation) section below.
+[Crestron Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#crestron-control-system-files) contain the control system program that controls the behavior of the AV system and it's components. To replace or upload new control system code to a processor, follow the [Crestron Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#crestron-control-system-files-installation) section below.
 
 ## **TABLE OF CONTENTS:**
 
