@@ -1,18 +1,22 @@
 # **PIMCO NB 03-Ocean MPR: AV Systems Files**
 
-Cisco user interface extension files contain all the graphics for the Room Controls panel.  Widget IDs and panel graphics can be found in the [User Interface Extensions Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) section below.
+Biamp [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-files) contain the audio dsp program that controls how the AV system's audio is proccessed. To replace or upload a new DSP program to a processor, follow the [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation) section below.
 
-Crestron control system files contain the SIMPL Windows program that controls the behavior of the AV system and it's periferal components. To replace or upload new control system code to a processor, follow the [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below.
+Cisco [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files) contain all the graphics for the room controls panel. To replace or upload new user interface extensions to a codec, follow the [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation) section below.
 
-Biamp DSP system files contain the Tesira audio program that controls how the AV system's audio is proccessed. To replace or upload a new DSP code to a processor, follow the [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation) section below.
+Crestron [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files) contain the control system program that controls the behavior of the AV system and it's periferal components. To replace or upload new control system code to a processor, follow the [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation) section below.
 
 ## **TABLE OF CONTENTS:**
 
-- [User Interface Extension Widget Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
+- [DSP System Files](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-files)
+- [DSP System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#dsp-system-files-installation)
+- [User Interface Extension Files](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files)
 - [User Interface Extension Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#user-interface-extension-files-installation)
 - [Control System Files](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files)
 - [Control System Files Installation](https://github.com/brianlopezpimco/nb03ocean-av#control-system-files-installation)
 - [Additional Resources](https://github.com/brianlopezpimco/nb03ocean-av#additional-resources)
+
+## **DSP SYSTEM FILES:**
 
 ## **USER INTERFACE EXTENSION FILES:**
 
