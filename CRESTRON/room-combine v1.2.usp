@@ -1,0 +1,144 @@
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+
+#HELP_BEGIN
+INPUTS
+=====================
+codec_nvx
+
+INPUTS
+=====================
+combine_state
+    0 all separate
+    1 Combine AB
+    2 Combine BC
+    3 Combine ABC
+
+codec_rx    will listen to codec when the prompt is cleared, indicating room is reverting to be separated.
+
+OUTPUTS
+=====================
+codec_tx will send message prompt lock out to appropriate codec based on combine state. or to clear the prompt message
+
+#HELP_END
+
+#DEFINE_CONSTANT MAX_CODECS 3
+#DEFINE_CONSTANT PromptID "fb"
+#DEFINE_CONSTANT PromptTitle "This Conference Room is Combined with Another Room"
+#DEFINE_CONSTANT PromptMessage "Please use touch panel in main room to control system. Select Exit below or tap anywhere on screen to return all conference rooms to stand alone mode."
+#DEFINE_CONSTANT PromptOption "Exit and Uncombine All Conference Rooms"
+
+ANALOG_INPUT
+    combine_state;
+
+BUFFER_INPUT
+    codec_rx[MAX_CODECS][500];
+
+DIGITAL_OUTPUT
+    combine_cleared;
+
+STRING_OUTPUT
+    codec_tx[MAX_CODECS];
+
+//------------------------------------------------------------------------------
+// GLOBALS
+//------------------------------------------------------------------------------
+string promptclear_event[100];
+
+
+//------------------------------------------------------------------------------
+FUNCTION SendLockOutPrompt(integer codec_index)
+{
+    string msg[1000];
+    msg = "xCommand UserInterface Message Prompt Display ";
+    msg = msg + "FeedbackId: \x22" + PromptID + "\x22 ";
+    msg = msg + "\x22Option.1\x22: \x22" + PromptOption + "\x22 ";
+    msg = msg + "Text: \x22" + PromptMessage + "\x22 ";
+    msg = msg + "Title: \x22" + PromptTitle + "\x22\n";
+    codec_tx[codec_index] = msg;
+}
+//------------------------------------------------------------------------------
+FUNCTION SendClearLockout(integer codec_index)
+{
+    codec_tx[codec_index] = "xCommand UserInterface Message Prompt Clear FeedbackId: \x22" + PromptID + "\x22\n";
+}
+//------------------------------------------------------------------------------
+FUNCTION SeparateRooms()
+{
+    SendClearLockout(1);
+    SendClearLockout(2);
+    SendClearLockout(3);
+}
+//------------------------------------------------------------------------------
+FUNCTION CombineAB()
+{
+    SendLockOutPrompt(2);
+    SendClearLockout(3);
+}
+//------------------------------------------------------------------------------
+FUNCTION CombineBC()
+{
+    SendLockOutPrompt(2);
+    SendClearLockout(1);
+}
+//------------------------------------------------------------------------------
+FUNCTION CombineABC()
+{
+    SendLockOutPrompt(2);
+    SendLockOutPrompt(3);
+}
+//------------------------------------------------------------------------------
+FUNCTION ProcessRx(string temp)
+{
+    string key[100];
+
+    if (find(promptclear_event, temp) > 0)
+    {
+        if (combine_state <> 0)
+        {
+            pulse(100,combine_cleared);
+        }
+    }
+}
+//------------------------------------------------------------------------------
+CHANGE combine_state
+{
+    switch(combine_state)
+    {
+        case (0):
+        {
+            SeparateRooms();
+        }
+        case (1):
+        {
+            CombineAB();
+        }
+        case (2):
+        {
+            CombineBC();
+        }
+        case (3):
+        {
+            CombineABC();
+        }
+    }
+}
+//------------------------------------------------------------------------------
+THREADSAFE CHANGE codec_rx
+{
+    string temp[200];
+    integer x;
+    while(1)
+    {
+        x = GetLastModifiedArrayIndex();
+        temp = gather("\x0D\x0A** end\x0D\x0A", codec_rx[x]);
+        ProcessRx(temp);
+    }
+}
+//------------------------------------------------------------------------------
+FUNCTION Main()
+{
+    WaitForInitializationComplete();
+    makestring(promptclear_event, "*e UserInterface Message Prompt Cleared FeedbackId: \x22%s\x22", PromptID);
+}
