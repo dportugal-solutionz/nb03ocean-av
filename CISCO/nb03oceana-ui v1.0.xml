@@ -93,7 +93,7 @@
       <Row>
         <Name>Main Display</Name>
         <Widget>
-          <WidgetId>main-display-on-btn</WidgetId>
+          <WidgetId>display01-on-btn</WidgetId>
           <Name>Display On</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
@@ -102,32 +102,38 @@
       <Row>
         <Name>Projector</Name>
         <Widget>
-          <WidgetId>lift-up-btn</WidgetId>
+          <WidgetId>display02-liftup-btn</WidgetId>
           <Name>Lift Up</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
         </Widget>
         <Widget>
-          <WidgetId>lift-down-btn</WidgetId>
+          <WidgetId>display02-liftdown-btn</WidgetId>
           <Name>Lift Down</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
         </Widget>
         <Widget>
-          <WidgetId>screen-up-btn</WidgetId>
+          <WidgetId>display02-screenup-btn</WidgetId>
           <Name>Screen Up</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
         </Widget>
         <Widget>
-          <WidgetId>screen-down-btn</WidgetId>
+          <WidgetId>display02-screendown-btn</WidgetId>
           <Name>Screen Down</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
         </Widget>
         <Widget>
-          <WidgetId>projector-on-btn</WidgetId>
+          <WidgetId>display02-on-btn</WidgetId>
           <Name>Projector On</Name>
+          <Type>Button</Type>
+          <Options>size=2</Options>
+        </Widget>
+        <Widget>
+          <WidgetId>display02-off-btn</WidgetId>
+          <Name>Projector Off</Name>
           <Type>Button</Type>
           <Options>size=2</Options>
         </Widget>
