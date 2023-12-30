@@ -1,0 +1,172 @@
+#DEFAULT_VOLATILE
+#ENABLE_STACK_CHECKING
+#ENABLE_TRACE
+#DEFINE_CONSTANT MAX_WIDGETS 50
+#DIGITAL_EXPAND InputsWithParams
+#DIGITAL_EXPAND OutputsWithParams
+#DIGITAL_EXPAND InputsWithOutputs
+
+//region Inputs & Outputs
+DIGITAL_INPUT
+    enable_heartbeat
+	,_skip_
+	,_skip_
+	,_skip_;
+
+STRING_INPUT
+	proc_ip_address[100]
+	,proc_mac_address[100]
+	;
+
+BUFFER_INPUT
+	codec_rx[500];
+
+DIGITAL_OUTPUT
+	in_standby,is_awake,mic_mute_on,mic_mute_off;
+
+DIGITAL_INPUT
+	widget_on_fb[MAX_WIDGETS];
+
+DIGITAL_OUTPUT
+	widget_pressed[MAX_WIDGETS];
+
+STRING_OUTPUT
+    _skip_
+    ,_skip_
+    ,codec_tx;
+
+STRING_PARAMETER
+    _skip_  //skip for digital_io enable_heartbeat
+	,_skip_
+	,_skip_
+	,_skip_
+    ,WidgetId[MAX_WIDGETS][100];
+
+// region Functions
+//------------------------------------------------------------------------------
+STRING_FUNCTION ParseWidgetId(string temp)
+{
+    string wId[100];
+    wId = remove("*e UserInterface Extensions Event Clicked Signal: \x22", temp);
+    wId = remove("\x22", temp);
+    wId = left(wId, len(wId) - 1); //remove the ending double quote
+    return (wId);
+
+}
+//------------------------------------------------------------------------------
+FUNCTION SetOutput(string wID, integer value)
+{
+    integer x;
+    for(x= 1 to MAX_WIDGETS)
+    {
+        if (len(WidgetId[x]) > 0)
+        {
+            if (wID = WidgetId[x])
+            {
+                widget_pressed[x] = value;
+                break;
+            }
+        }
+    }
+}
+//------------------------------------------------------------------------------
+FUNCTION ProcessRx(string temp)
+{
+    integer x;
+    string wId[100];
+	switch(1)
+	{
+		case (find("*s Standby State: Off", temp) > 0):
+		{
+			in_standby = 0;
+			is_awake = 1;
+		}
+		case (find("*s Standby State: Standby", temp) > 0):
+		{
+			is_awake = 0;
+			in_standby = 1;			
+		}
+		case (find("*s Audio Microphone Mute: Off",temp) > 0):
+		{
+		}
+		case (find("*s Audio Microphone Mute: On",temp) > 0):
+		{
+		}
+        case (find("*e UserInterface Extensions Event Pressed Signal", temp)> 0):
+        {
+            trace("processing widget pressed event");
+            wId = ParseWidgetId(temp);
+            trace("wId:%s", wId);
+            SetOutput(wID, 1);
+        }
+        case (find("*e UserInterface Extensions Event Released Signal", temp)> 0):
+        //case (find("*e UserInterface Extensions Event Clicked Signal", temp)> 0):
+        //case (find("*e UserInterface Extensions Event Changed Signal", temp)> 0):
+        {
+            trace("processing widget released event");
+            wId = ParseWidgetId(temp);
+            trace("wId:%s", wId);
+            SetOutput(wID, 0);
+        }
+    }
+}
+// endregion
+// region Events
+//------------------------------------------------------------------------------
+THREADSAFE CHANGE codec_rx
+{
+	string temp[100];
+
+	WHILE(1)
+	{
+		try
+		{
+			temp = GATHER("\x0D\x0A** end\x0D\x0A", codec_rx);
+			ProcessRx(temp);
+		}
+		catch
+		{
+			Trace("Error in codec_rx. %s", GetExceptionMessage());
+		}
+	}
+}
+//------------------------------------------------------------------------------
+THREADSAFE PUSH enable_heartbeat
+{
+    while(enable_heartbeat)
+    {
+        DELAY(3000);
+		codec_tx = "xCommand Peripherals Connect ID: \"" + proc_mac_address + "\" Name: \"Crestron CP4\" NetworkAddress: " + proc_ip_address + " SoftwareInfo: \"cisco-codec v1.3\" Type: \"ControlSystem\"\x0D\x0A";
+		//codec_tx = "xFeedback Register Event/UserInterface/Extensions/Widget\x0D\x0A";
+        codec_tx = "xfeedback Register Event/UserInterface/Extensions/Event\x0D\x0D";
+		codec_tx = "xFeedback Register Event/UserInterface/Message/\x0D\x0A";
+		codec_tx = "xFeedback Register Status/Standby/State\x0D\x0A";
+		codec_tx = "xFeedback Register Status/Audio/Microphone/Mute\x0D\x0A";
+    }
+}
+//------------------------------------------------------------------------------
+PUSH widget_on_fb
+{
+    integer x;
+    x = GetLastModifiedArrayIndex();
+    if (len(WidgetId[x]) > 0)
+    {
+        makestring(codec_tx,"xCommand UserInterface Extensions Widget SetValue Value: \x22active\x22 WidgetId: \x22%s\x22\n", WidgetId[x]);
+    }
+}
+//------------------------------------------------------------------------------
+RELEASE widget_on_fb
+{
+    integer x;
+    x = GetLastModifiedArrayIndex();
+    if (len(WidgetId[x]) > 0)
+    {
+        makestring(codec_tx,"xCommand UserInterface Extensions Widget SetValue Value: \x22inactive\x22 WidgetId: \x22%s\x22\n", WidgetId[x]);
+    }
+}
+// endregion
+//------------------------------------------------------------------------------
+FUNCTION main()
+{
+    WaitForInitializationComplete();
+}
